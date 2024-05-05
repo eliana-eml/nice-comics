@@ -38,7 +38,7 @@ public class ClienteController {
     @PostMapping
     public ResponseEntity<Cliente> cadastrarCliente(@RequestBody Cliente cliente) {
         
-        if (clienteRepository.existsByEmail(cliente.getEmail())) {
+        if (clienteRepository.existsByEmailCliente(cliente.getEmailCliente())) {
             return ResponseEntity.badRequest().body(null);
         }
         
@@ -49,9 +49,9 @@ public class ClienteController {
     @PostMapping("/login")
     public ResponseEntity<Cliente> efetuarLogin(@RequestBody Cliente cliente) {
         
-        Cliente clienteEncontrado = clienteRepository.findByEmail(cliente.getEmail());
+        Cliente clienteEncontrado = clienteRepository.findByEmailCliente(cliente.getEmailCliente());
         
-        if (clienteEncontrado == null || !clienteEncontrado.getSenha().equals(cliente.getSenha())) {
+        if (clienteEncontrado == null || !clienteEncontrado.getSenhaCliente().equals(cliente.getSenhaCliente())) {
             return ResponseEntity.notFound().build();
         }
         

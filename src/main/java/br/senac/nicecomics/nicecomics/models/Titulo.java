@@ -10,96 +10,105 @@ public class Titulo {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long idTitulo;
  
-    private String nome;
-    private String autor;
-    private String editora;
-    private int qtdpaginas;
-    private double preco;
-    private String tipo;
-    private String genero;
-    private String urlcapa;
-    private char promocao;
+    private String nomeTitulo;
+    private int qtdPaginasTitulo;
+    private double precoTitulo;
+    private String tipoTitulo;
+    private String generoTitulo;
+    private String urlCapaTitulo;
+    private char promocaoTitulo;
+    private String categoriaTitulo;
+    private int idAutor;
+    private int idEditora;
 
-    public Long getId() {
-        return id;
+    public Long getIdTitulo() {
+        return idTitulo;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setIdTitulo(Long idTitulo) {
+        this.idTitulo = idTitulo;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomeTitulo() {
+        return nomeTitulo;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNomeTitulo(String nomeTitulo) {
+        this.nomeTitulo = nomeTitulo;
     }
 
-    public String getAutor() {
-        return autor;
+    public int getQtdPaginasTitulo() {
+        return qtdPaginasTitulo;
     }
 
-    public void setAutor(String autor) {
-        this.autor = autor;
+    public void setQtdPaginasTitulo(int qtdPaginasTitulo) {
+        this.qtdPaginasTitulo = qtdPaginasTitulo;
     }
 
-    public String getEditora() {
-        return editora;
+    public double getPrecoTitulo() {
+        return precoTitulo;
     }
 
-    public void setEditora(String editora) {
-        this.editora = editora;
+    public void setPrecoTitulo(double precoTitulo) {
+        this.precoTitulo = precoTitulo;
     }
 
-    public int getQtdpaginas() {
-        return qtdpaginas;
+    public String getTipoTitulo() {
+        return tipoTitulo;
     }
 
-    public void setQtdpaginas(int qtdpaginas) {
-        this.qtdpaginas = qtdpaginas;
+    public void setTipoTitulo(String tipoTitulo) {
+        this.tipoTitulo = tipoTitulo;
     }
 
-    public double getPreco() {
-        return preco;
+    public String getGeneroTitulo() {
+        return generoTitulo;
     }
 
-    public void setPreco(double preco) {
-        this.preco = preco;
+    public void setGeneroTitulo(String generoTitulo) {
+        this.generoTitulo = generoTitulo;
     }
 
-    public String getTipo() {
-        return tipo;
+    public String getUrlCapaTitulo() {
+        return urlCapaTitulo;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setUrlCapaTitulo(String urlCapaTitulo) {
+        this.urlCapaTitulo = urlCapaTitulo;
     }
 
-    public String getGenero() {
-        return genero;
+    public char getPromocaoTitulo() {
+        return promocaoTitulo;
     }
 
-    public void setGenero(String genero) {
-        this.genero = genero;
+    public void setPromocaoTitulo(char promocaoTitulo) {
+        this.promocaoTitulo = promocaoTitulo;
     }
 
-    public String getUrlcapa() {
-        return urlcapa;
+    public String getCategoriaTitulo() {
+        return categoriaTitulo;
     }
 
-    public void setUrlcapa(String urlcapa) {
-        this.urlcapa = urlcapa;
+    public void setCategoriaTitulo(String categoriaTitulo) {
+        this.categoriaTitulo = categoriaTitulo;
     }
 
-    public char getPromocao() {
-        return promocao;
+    public int getIdAutor() {
+        return idAutor;
     }
 
-    public void setPromocao(char promocao) {
-        this.promocao = promocao;
+    public void setIdAutor(int idAutor) {
+        this.idAutor = idAutor;
+    }
+
+    public int getIdEditora() {
+        return idEditora;
+    }
+
+    public void setIdEditora(int idEditora) {
+        this.idEditora = idEditora;
     }
     
 }

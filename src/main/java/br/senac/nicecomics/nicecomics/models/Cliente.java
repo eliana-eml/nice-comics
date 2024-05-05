@@ -10,125 +10,134 @@ public class Cliente {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long idCliente;
     
-    private String cpf;
-    private String nome;
-    private String cep;
-    private String logradouro;
-    private String numero;
-    private String complemento;
-    private String bairro;
-    private String cidade;
-    private String uf;
-    private String email;
-    private String senha;
-    private String telefone;
+    private String cpfCliente;
+    private String nomeCliente;
+    private String cepCliente;
+    private String logradouroCliente;
+    private String numeroCliente;
+    private String complementoCliente;
+    private String bairroCliente;
+    private String cidadeCliente;
+    private String ufCliente;
+    private String emailCliente;
+    private String senhaCliente;
+    private String telefoneCliente;
+    private int idMetodoPagamento;
 
-    public Long getId() {
-        return id;
+    public Long getIdCliente() {
+        return idCliente;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setIdCliente(Long idCliente) {
+        this.idCliente = idCliente;
     }
 
-    public String getCpf() {
-        return cpf;
+    public String getCpfCliente() {
+        return cpfCliente;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public void setCpfCliente(String cpfCliente) {
+        this.cpfCliente = cpfCliente;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomeCliente() {
+        return nomeCliente;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNomeCliente(String nomeCliente) {
+        this.nomeCliente = nomeCliente;
     }
 
-    public String getCep() {
-        return cep;
+    public String getCepCliente() {
+        return cepCliente;
     }
 
-    public void setCep(String cep) {
-        this.cep = cep;
+    public void setCepCliente(String cepCliente) {
+        this.cepCliente = cepCliente;
     }
 
-    public String getLogradouro() {
-        return logradouro;
+    public String getLogradouroCliente() {
+        return logradouroCliente;
     }
 
-    public void setLogradouro(String logradouro) {
-        this.logradouro = logradouro;
+    public void setLogradouroCliente(String logradouroCliente) {
+        this.logradouroCliente = logradouroCliente;
     }
 
-    public String getNumero() {
-        return numero;
+    public String getNumeroCliente() {
+        return numeroCliente;
     }
 
-    public void setNumero(String numero) {
-        this.numero = numero;
+    public void setNumeroCliente(String numeroCliente) {
+        this.numeroCliente = numeroCliente;
     }
 
-    public String getComplemento() {
-        return complemento;
+    public String getComplementoCliente() {
+        return complementoCliente;
     }
 
-    public void setComplemento(String complemento) {
-        this.complemento = complemento;
+    public void setComplementoCliente(String complementoCliente) {
+        this.complementoCliente = complementoCliente;
     }
 
-    public String getBairro() {
-        return bairro;
+    public String getBairroCliente() {
+        return bairroCliente;
     }
 
-    public void setBairro(String bairro) {
-        this.bairro = bairro;
+    public void setBairroCliente(String bairroCliente) {
+        this.bairroCliente = bairroCliente;
     }
 
-    public String getCidade() {
-        return cidade;
+    public String getCidadeCliente() {
+        return cidadeCliente;
     }
 
-    public void setCidade(String cidade) {
-        this.cidade = cidade;
+    public void setCidadeCliente(String cidadeCliente) {
+        this.cidadeCliente = cidadeCliente;
     }
 
-    public String getUf() {
-        return uf;
+    public String getUfCliente() {
+        return ufCliente;
     }
 
-    public void setUf(String uf) {
-        this.uf = uf;
+    public void setUfCliente(String ufCliente) {
+        this.ufCliente = ufCliente;
     }
 
-    public String getEmail() {
-        return email;
+    public String getEmailCliente() {
+        return emailCliente;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmailCliente(String emailCliente) {
+        this.emailCliente = emailCliente;
     }
 
-    public String getSenha() {
-        return senha;
+    public String getSenhaCliente() {
+        return senhaCliente;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public void setSenhaCliente(String senhaCliente) {
+        this.senhaCliente = senhaCliente;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public String getTelefoneCliente() {
+        return telefoneCliente;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public void setTelefoneCliente(String telefoneCliente) {
+        this.telefoneCliente = telefoneCliente;
+    }
+
+    public int getIdMetodoPagamento() {
+        return idMetodoPagamento;
+    }
+
+    public void setIdMetodoPagamento(int idMetodoPagamento) {
+        this.idMetodoPagamento = idMetodoPagamento;
     }
 
     
-    
+
 }

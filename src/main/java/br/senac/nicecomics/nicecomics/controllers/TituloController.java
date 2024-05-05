@@ -26,8 +26,8 @@ public class TituloController {
         DecimalFormat df = new DecimalFormat("###,00");
         
         for (Titulo titulo : listaTitulos) {
-            double precoFormatado = Double.parseDouble(df.format(titulo.getPreco()));
-            titulo.setPreco(precoFormatado);
+            double precoFormatado = Double.parseDouble(df.format(titulo.getPrecoTitulo()));
+            titulo.setPrecoTitulo(precoFormatado);
         }
         
         return listaTitulos;

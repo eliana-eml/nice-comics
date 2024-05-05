@@ -1,10 +1,10 @@
 package br.senac.nicecomics.nicecomics.repositories;
 
-import br.senac.nicecomics.nicecomics.models.Titulo;
+import br.senac.nicecomics.nicecomics.models.Pedido;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface TituloRepository extends JpaRepository<Titulo, Long>{
+public interface PedidoRepository extends JpaRepository<Pedido, Long>{
     
 }
