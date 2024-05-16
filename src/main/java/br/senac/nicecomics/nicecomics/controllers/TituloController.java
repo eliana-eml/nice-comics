@@ -38,4 +38,19 @@ public class TituloController {
         Titulo result = tituloRepository.findById(id).get();
         return result;
     }
+    
+    @GetMapping(value = "/categoria/{categoriaTitulo}")
+    public List<Titulo> listarTitulosPorCategoria(@PathVariable String categoriaTitulo) {
+        
+        List<Titulo> listaTitulosPorCategoria = tituloRepository.findAllByCategoriaTitulo(categoriaTitulo);
+        
+        DecimalFormat df = new DecimalFormat("###,00");
+        
+        for (Titulo titulo : listaTitulosPorCategoria) {
+            double precoFormatado = Double.parseDouble(df.format(titulo.getPrecoTitulo()));
+            titulo.setPrecoTitulo(precoFormatado);
+        }
+        
+        return listaTitulosPorCategoria;
+    }
 }
