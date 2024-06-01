@@ -38,6 +38,12 @@ public class PedidoController {
         return result;     
     }
     
+    @GetMapping(value = "/listar/cliente/{id}")
+    public List<Pedido> findByIdCliente(@PathVariable Long id) {
+        List<Pedido> result = pedidoRepository.findAllPedidosByIdCliente(id);
+        return result;     
+    }
+    
     @PostMapping
     public ResponseEntity<Pedido> cadastrarPedido(@RequestBody Pedido pedido) {
                 
