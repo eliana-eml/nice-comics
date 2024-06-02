@@ -33,6 +33,12 @@ public class ItemPedidoController {
         return resultado;
     }
     
+    @GetMapping(value = "/listar/pedido/{id}")
+    public List<ItemPedido> findByIdPedido(@PathVariable Long id) {
+        List<ItemPedido> result = itemPedidoRepository.findAllItemPedidoByIdPedido(id);
+        return result;     
+    }
+    
     @PostMapping
     public ResponseEntity<ItemPedido> cadastrarItemPedido(@RequestBody ItemPedido item) {
         ItemPedido itemSalvo = itemPedidoRepository.save(item);
